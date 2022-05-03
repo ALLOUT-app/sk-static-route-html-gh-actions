@@ -8,7 +8,9 @@ const config = {
   preprocess: preprocess(),
 
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      fallback: 'index.html'
+    }),
     paths: {
       base: '/sk-static-route-html-gh-actions'
     }
